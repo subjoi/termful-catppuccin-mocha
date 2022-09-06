@@ -1,0 +1,217 @@
+// A Discord theme for Powercord-based client mods.
+// Description: Did you ever want to make Discord look like a command-line interface?
+
+:root {
+    --background: #010105; 
+    --border: #706080;
+    --font: "IBM Plex Mono", monospace;
+    --font-size: 14px;
+    --small-font-size: 12px;
+    --separator: #161618;
+}
+
+.theme-dark {
+    --background-primary: var(--background);
+    --background-secondary: var(--background);
+    --background-secondary-alt: var(--background);
+    --background-tertiary: var(--background);
+    --background-accent: var(--background);
+    --background-floating: var(--background);
+    --channeltextarea-background: var(--background);
+    --font-primary: var(--font);
+    --font-display: var(--font);
+    --font-headline: var(--font);
+    --font-code: var(--font);
+    --toast-background: var(--background);
+}
+
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var, .name-2m3Cms, .name-28HaxV, .item-3XjbnGO, .titleWrapper-24Kyzc h3 {
+    font-size: var(--font-size);
+}
+    
+.contents-2MsGLg > *, .username-h_Y3Us, .embedTitle-2n1pEb {
+    font-size: var(--font-size);
+}
+
+.botText-1fD6Qk, .textBadge-1fdDPJ, .roleName-2ZJJYR, .contents-3ca1mk, .customStatusText-3wj79x {
+    font-size: var(--small-font-size);
+}
+
+.userInfoBody-1zgAd0 {
+    .text-sm-normal-3Zj3Iv, a, .commandMention {
+        font-size: var(--small-font-size);  
+    }
+    .emojiContainer-2XKwXX img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.selected-1Drb7Z .childWrapper-1j_1ub {
+    background-color: var(--background) !important;
+    path {
+        color: var(--border); 
+    }
+}
+
+.pill-L_aLMQ, .sectionDivider-189lqb {
+    display: none;
+}
+
+.sidebar-1tnWFu { 
+    .containerDefault-3TQ5YN {
+        padding: 5px;
+    }
+    .containerDefault-3TQ5YN {
+        .name-3BUDLf {
+            color: var(--border);
+        }
+        padding-top: 10px;
+    }
+    .unread-36eUEm {
+        display: none;
+    }
+}
+
+.sidebar-1tnWFu, .chatContent-3KubbW, .members-3WRCEx, .tabBody-2dgbAs .peopleColumn-1wMU14 {
+    margin: 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.peopleColumn-1wMU14 {
+    div[aria-label="Message"] {
+        &::before {
+            content: "Message";
+            color: var(--border);
+        }
+        svg {
+            display: none;    
+        }
+    }
+}
+
+.members-3WRCEx .membersGroup-2eiWxl.container-q97qHp {
+    color: var(--border);
+    margin: 5px;
+    text-align: center;
+}
+
+.accountProfileCard-lbN7n-, .userPopout-2j1gM4, .channelTextArea-1VQBuV, .embed-hKpSrO {
+    border: 1px solid var(--border) !important;
+    border-radius: 10;
+}
+
+.searchBar-2aylmZ, .searchBar-3TnChZ .searchBarComponent-3N7dCG {
+    border-bottom: 1px solid var(--separator);
+    padding: 5px;
+    border-radius: 0;
+}
+
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+    font-size: var(--small-font-size);
+}
+
+.group-spacing-16 .groupStart-3Mlgv1 {
+    margin-top: 1.2rem;
+}
+
+.group-spacing-0 .groupStart-3Mlgv1 {
+    margin-top: 0.625rem;
+}
+
+section[aria-label="Channel header"], .container-ZMc96U {
+    margin: 10px;
+    margin-bottom: 0;
+    height: 30px;
+    align-self: center;
+}
+
+//:has(.compact-QWkw9-) {
+    .animatedContainer-2laTjx {
+        display: none;
+        height: 0;
+    }
+    ul[aria-label="Channels"] {
+        bottom: 80px;
+    }
+//}
+
+.progressBar-2yl2pi.bar-H6j3_Q {
+    display: none;
+    border-bottom: none;
+}
+
+ul[aria-label="Channels"] {
+    .progressBarContainer-1efroK, .divider-3qUeLQ {
+        display: none;
+    }
+}
+
+.repliedMessage-3Z6XBG .repliedTextPreview-1bvxun {
+    margin-left: 2px;
+}
+
+section[aria-label="User area"] {
+    .hoverRoll-2XwpoF * {
+        font-size: var(--small-font-size);
+    }
+    border-top: 1px solid var(--border);
+}
+
+.markup-eYLPri code {
+    background-color: var(--separator);
+    border-radius: 5px;
+}
+
+.compact-2Nkcau .timestamp-p1Df1m {
+    margin-right: 10px;
+    width: 3.3rem;
+}
+
+.toolbar-3_r2xA {
+    div[aria-label="Threads"], div[aria-label="Notification Settings"], div[aria-label="Pinned Messages"], div[aria-label="Hide Member List"], div[aria-label="Inbox"] {
+        svg {
+            display: none;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    div[aria-label="Threads"], div[aria-label="Inbox"] {
+        &::before {
+            content: attr(aria-label);
+        }
+    }
+    div[aria-label="Notification Settings"]::before {
+        content: "Notifications";
+     }
+    div[aria-label="Pinned Messages"] {
+        &::before {
+            content: "Pins";    
+        }
+        span {
+            display: none;
+        }
+    }
+    div[aria-label="Hide Member List"]::before {
+        content: "Members";
+    }
+    .search-39IXmY {
+        order: 1;
+    }
+}
+
+.peopleListItem-u6dGxF {
+    border-top: none;
+}
+
+// this code section is inspirated by AlexFlipnote#0001's snippet
+.name-3BUDLf, .membersGroup-2eiWxl.container-q97qHp, .title-3hptVQ, .headerText-1qIDDT, .title-x4dI75 {
+    text-transform: capitalize;
+}
+
+.channelTextArea-1FufC0 button[aria-label="Send a gift"], ul[aria-label="Direct Messages"] li[aria-posinset="3"], a[href="https://support.discord.com"] {
+    display: none;
+}
+//
