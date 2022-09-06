@@ -236,7 +236,7 @@ button[aria-label="Select emoji"] {
     }
 }
 
-[class*="messagesWrapper-"] &::-webkit-scrollbar {
+&::-webkit-scrollbar {
     width: 10px;
 }
 //
