@@ -324,6 +324,10 @@ section[aria-label="User area"] {
     display: none;
 }
 
+.pronoundb-pronouns * {
+    filter: brightness(75%);
+}
+
 // this code section is inspirated by AlexFlipnote#0001's snippet
 .name-3BUDLf, [class*="peopleColumn-"] [class*="title-"], [class*="membersGroup-"][class*="container-"], [class*="eyebrow-"] {
     text-transform: capitalize;
