@@ -129,14 +129,6 @@ section[aria-label="Channel header"] {
     align-self: center;
 }
 
-[class*="guilds"] {
-    width: 10px;
-    transition: 250ms;
-    &:hover {
-        width: 72px;
-    }   
-}
-
 //[class*="imageWrapper-"] {
 //    border: 1px solid var(--border);
 //}
@@ -327,6 +319,16 @@ section[aria-label="User area"] {
 .pronoundb-pronouns * {
     filter: brightness(75%);
 }
+
+// horizontal server list
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+
+[class*="guilds-"] ul[role="tree"] [class*="scrollerBase-"] {
+    align-items: center !important;
+    justify-content: center !important;
+}
+//
 
 // this code section is inspirated by AlexFlipnote#0001's snippet
 .name-3BUDLf, [class*="peopleColumn-"] [class*="title-"], [class*="membersGroup-"][class*="container-"], [class*="eyebrow-"] {
