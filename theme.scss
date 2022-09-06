@@ -78,7 +78,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
 [class*="sidebar-"], [class*="chatContent-"], [class*="members-"], [class*="tabBody-"] [class*="peopleColumn-"] {
     margin: 10px;
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 [class*="peopleColumn-"] {
