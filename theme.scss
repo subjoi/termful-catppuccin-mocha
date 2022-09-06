@@ -72,6 +72,9 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     .unread-36eUEm {
         display: none;
     }
+    .unreadBar-elBRZx {
+        background-color: var(--separator);
+    }
 }
 
 .sidebar-1tnWFu, .chatContent-3KubbW, .members-3WRCEx, .tabBody-2dgbAs .peopleColumn-1wMU14 {
@@ -128,13 +131,28 @@ section[aria-label="Channel header"], .container-ZMc96U {
     align-self: center;
 }
 
+.guilds-2JjMmN {
+    width: 10px;
+    transition: 250ms;
+    &:hover {
+        width: 72px;
+    }   
+}
+
 //:has(.compact-QWkw9-) {
+    // remove images and border-radius when possible for a more cli-like look
     .animatedContainer-2laTjx {
         display: none;
         height: 0;
     }
     ul[aria-label="Channels"] {
         bottom: 80px;
+    }
+    .botTag-7aX5WZ {
+        svg {
+            display: none;
+        }
+        border-radius: 0 !important;
     }
 //}
 
@@ -177,15 +195,19 @@ section[aria-label="User area"] {
             top: 0;
             bottom: 0;
         }
-    }
-    div[aria-label="Threads"], div[aria-label="Inbox"] {
         &::before {
             content: attr(aria-label);
+            display: block;
+            text-align: center;
         }
+        height: fit-content;
     }
     div[aria-label="Notification Settings"]::before {
         content: "Notifications";
-     }
+    }
+    div[aria-label="Hide Member List"]::before {
+        content: "Members";
+    }
     div[aria-label="Pinned Messages"] {
         &::before {
             content: "Pins";    
@@ -194,11 +216,14 @@ section[aria-label="User area"] {
             display: none;
         }
     }
-    div[aria-label="Hide Member List"]::before {
-        content: "Members";
-    }
     .search-39IXmY {
         order: 1;
+        height: fit-content;
+        margin-right: 5px;
+        .searchBar-jGtisZ {
+            width: fit-content;
+            text-align: center;
+        }
     }
 }
 
@@ -206,8 +231,16 @@ section[aria-label="User area"] {
     border-top: none;
 }
 
+.embed-hKpSrO {
+    margin-top: 5px;
+}
+
+#---new-messages-bar {
+    display: none;
+}
+
 // this code section is inspirated by AlexFlipnote#0001's snippet
-.name-3BUDLf, .membersGroup-2eiWxl.container-q97qHp, .title-3hptVQ, .headerText-1qIDDT, .title-x4dI75 {
+.name-3BUDLf, .membersGroup-2eiWxl.container-q97qHp, .title-3hptVQ, .headerText-1qIDDT, .title-x4dI75, .text-2GsXbW {
     text-transform: capitalize;
 }
 
