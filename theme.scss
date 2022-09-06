@@ -327,6 +327,7 @@ section[aria-label="User area"] {
 [class*="guilds-"] ul[role="tree"] [class*="scrollerBase-"] {
     align-items: center !important;
     justify-content: center !important;
+    left: 5px;
 }
 //
 
@@ -339,5 +340,4 @@ section[aria-label="User area"] {
     display: none;
 }
 //
-
 
