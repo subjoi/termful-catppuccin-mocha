@@ -244,8 +244,8 @@ ul[aria-label="Channels"] {
     }
 }
 
-[class*="repliedMessage-"] [class*=".repliedTextPreview-"] {
-    margin-left: 2px;
+[class*="repliedMessage-"] [class*="repliedTextPreview-"] {
+    margin-left: 3px;
 }
 
 section[aria-label="User area"] {
@@ -304,7 +304,7 @@ section[aria-label="User area"] {
     }
 }
 
-[class*=".peopleListItem-"] {
+[class*="peopleListItem-"] {
     border-top: none;
 }
 
