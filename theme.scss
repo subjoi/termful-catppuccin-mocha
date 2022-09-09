@@ -23,6 +23,7 @@
     --font-headline: var(--font);
     --font-code: var(--font);
     --toast-background: var(--background);
+    --HSL-server-alignment: flex-start;
 }
 
 
@@ -55,7 +56,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     }
 }
 
-[class*="pill-"], .sectionDivider-189lqb {
+.sectionDivider-189lqb {
     display: none;
 }
 
@@ -329,9 +330,7 @@ section[aria-label="User area"] {
 @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css");
 
 [class*="guilds-"] ul[role="tree"] [class*="scrollerBase-"] {
-    align-items: center !important;
-    justify-content: center !important;
-    //left: 5px;
+    left: 5px;
 }
 //
 
