@@ -8,6 +8,7 @@
     --font-size: 14px;
     --small-font-size: 12px;
     --separator: #161618;
+    --banner-display: none; // change it to block if you want the server banner to show
 }
 
 .theme-dark {
@@ -25,7 +26,6 @@
     --toast-background: var(--background);
     --HSL-server-alignment: flex-start;
 }
-
 
 a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var, .name-2m3Cms, .name-28HaxV, .item-3XjbnGO, .titleWrapper-24Kyzc h3 {
     font-size: var(--font-size);
@@ -136,12 +136,8 @@ section[aria-label="Channel header"] {
 
 // remove images and border-radius when possible for a more cli-like look
 [class*="animatedContainer-"] {
-    display: none;
-    height: 0;
-}
-
-ul[aria-label="Channels"] {
-    bottom: 80px;
+    display: var(--banner-display);
+    border-radius: 0;
 }
 
 [class*="botTag-"] {
@@ -235,14 +231,21 @@ button[aria-label="Select emoji"] {
 //
 
 [class*="progressBar-"][class*="bar-"] {
-    display: none;
-    border-bottom: none;
+    display: var(--banner-display);
+    margin: 0;
 }
 
 ul[aria-label="Channels"] {
     [class*="progressBarContainer-"], [class*="divider-"] {
-        display: none;
+        display: var(--banner-display);
     }
+    div[style="height: 84px;"] {
+        display: var(--banner-display);
+    }
+}
+
+[class*="communityInfoContainer-"] {
+    display: none;
 }
 
 [class*="repliedMessage-"] [class*="repliedTextPreview-"] {
@@ -256,7 +259,7 @@ section[aria-label="User area"] {
     border-top: 1px solid var(--border);
 }
 
-[class*="markup-"] code  {
+[class*="markup-"] code {
     background-color: var(--separator);
     border-radius: 5px;
 }
