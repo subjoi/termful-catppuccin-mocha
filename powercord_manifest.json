@@ -1,8 +1,8 @@
 {
-    "name": "termful",
-    "version": "1.0.1",
+    "name": "termful-catppuccin-mocha",
+    "version": "0.0.1",
     "description": "Did you ever want to make Discord look like a command-line interface?",
-    "author": "Syntax#0002",
+    "author": "Syntax#0002,subjoi#1342",
     "theme": "./theme.scss",
     "license": "MIT"
 }
